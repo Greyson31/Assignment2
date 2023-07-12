@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To TravelBunch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="index.html" class="logo"><span>T</span>ravelbunch</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="what_to_do.html">What To Do</a>
+            <a href="about_contact.html">About Us</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search Here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form >
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn"  onclick="showMessage()" >
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>Forgotten Password? <a href="#" >click here</a></p>
+            <p>Don't have an account? <a href="register.html">register now</a></p>
+        </form>
+    </div>
+
+    <!--Home Section-->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>TravelBunch</h3>
+            <p>Malaysia Travel and Recommendation Guide</p>
+            <button class="btn" onclick="scrollToSection('packages')">Start Your Journey</button>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="index/bgvideo.mp4"></span>
+            <span class="vid-btn" data-src="index/Malaysia Truly Asia.mp4"></span>
+            <span class="vid-btn" data-src="index/The Soul of Malaysia (Malaysia Truly Asia).mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="index/bgvideo.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+     <!-- book section start -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            Book Now
+        </h1>
+
+        <br><br>
+
+     <div class="row">
+
+        <div class="image">
+            <img src="5831236-removebg-preview.png" alt="">
+        </div>
+
+        <form>
+            <div class="inputBox">
+                <h3>where to?</h3>
+                <input type="text" placeholder="Enter Destination">
+            </div>
+            <div class="inputBox">
+                <h3>how many pax?</h3>
+                <input type="number" placeholder="Enter Pax">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn" onclick="showMessage()"> Book Now</button>
+            </div>
+                
+        </form>
+        <!-- </div> -->
+    </div>
+    </section>
+
+
+
+    <!-- book section end -->
+
+    <!-- packages section start -->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            Places To Go 
+        </h1>
+
+        <br><br>
+
+        <div class="box-container">
+        <div class="box">
+            <img src="gallery/langkawi.jpg" alt="langkawi">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Langkawi</h3>
+                <div class="stars">
+                    <!-- fas fa-star is colored star -->
+                    <!-- far far fa-star is uncolored star -->
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+
+                    <i class="fas fa fa-star"></i>
+                </div>
+                <br>
+                <p> Langkawi is an archipelago made up of 99 islands on the west coast of Malaysia. Surrounded by the Andaman Sea, the main island offers....</p>
+
+                <!-- <div class="prices">RM120.00 <span> RM150.00</span></div> -->
+                <a href="Langkawi.html" class="btn">learn more</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="gallery/ipoh.jpg" alt="ipoh">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Ipoh</h3>
+                <div class="stars">
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                </div>
+                <br>
+                <p>Ipoh is the capital of Perak and Malaysia's third-largest city. It is located between George Town and Kuala Lumpur and is a popular destination for lovers of adventure, art...</p>
+                
+                <!-- <div class="prices">RM67.00 <span> RM90.00</span></div> -->
+                <a href="IpohSpots.html" class="btn ">learn more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="gallery/Melacca.jpg" alt="Melacca">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Melaka</h3>
+                <div class="stars">
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                </div>
+                <br>
+                <p>What is Malacca known for?
+                    Among its other historic architectural sites, the Baba Nyonya Heritage Museum and the Malacca Sultanate Palace are one of the most renowned places. Having a great deal of history behind its name, Malacca is...</p>
+                
+                <!-- <div class="prices"> RM45.00 <span> RM70.00</span></div> -->
+                <a href="Malacca.html" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="gallery/georgetown.jpg" alt="penang">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Georgetown </h3>
+                <div class="stars">
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="fas fa fa-star"></i>
+                    <i class="far far fa-star"></i>
+                </div>
+                <br>
+                <p>What is the description of George Town? George Town (Malaysia) – Travel guide at Wikivoyage George Town is the capital city of the Malaysian state of Penang. It is Malaysia's sixth largest city, with a population of about 708,000, with 2.4 million in...</p>
+                
+                <!-- <div class="prices"> RM85.00 <span> RM90.00</span></div> -->
+                <a href="base.html" class="btn">learn more</a>
+            </div>
+        </div>
+    </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- packages section end -->
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            Services
+        </h1>
+
+        <br><br>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>accommodation</h3>
+            <p>choose the right places to stay overnight</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and beverage</h3>
+            <p>offers an abundance of gastronomical delights with a boundless variety of regional and seasonal dishes.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-subway"></i>
+            <h3>transportation</h3>
+            <p>offers the best mode of transport for your trip</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- services section end -->
+    <br><br><br>
+    <!-- review section start -->
+    
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            Reviews
+        </h1>
+
+        <br><br>
+
+        <div class="mySwiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="index/1642084867229.jpg" alt="">
+                         <h3>Umi Najiah Ahmad Razimi</h3>
+                         <div class="stars">
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                        </div>
+                         <p>I would definitely recommend TravelBunch to friends and family. They helped me out with getting 
+                            from Grand Mirage to another hotel I was staying at for the rest of my time in bali. They also helped
+                             with changing the pick up time for my transport. I was having trouble with my phone 
+                             so I wasn't sure I was going to get a response time. But they did and the driver was very helpful.
+                               
+                         </p>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="index/Nur-Intan-Adhani.jpg" alt="">
+                         <h3>Nur Intan Adhani</h3>
+                         <div class="stars">
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                            <i class="fas fa fa-star"></i>
+                        </div>
+                         <p>I didn't have to interact with TravelBunch at all, everything was sent to me promptly and all the information was very clear.
+                             Was relieved to see my name on a board on arrival (our airport pickup) as promised. The rep from Fusion Holidays met us
+                              at the hotel and the pick up to return to the airport was on time.
+                             Everything went very smoothly and will definitely use TravelOnline again.
+                                
+                         </p>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="index/anonymousIcon.png" alt="">
+                         <h3>John Soul</h3>
+                         <p>this is for testing purposes if you have anything to say ask now. 
+                            no?... ok i think it will not be in the final version. at least see how lazy thet are lah
+                            if not. uuuhh. hi..... 5 stars.</p>
+                                <div class="stars">
+                                    <i class="fas fa fa-star"></i>
+                                    <i class="fas fa fa-star"></i>
+                                    <i class="fas fa fa-star"></i>
+                                    <i class="fas fa fa-star"></i>
+                                    <i class="fas fa fa-star"></i>
+                                </div>
+                         
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+<!-- review section ends -->
+
+<br><br>
+
+<!-- footer section start-->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p> Founded in 2012, TravelBunch has been in operation for several years. We are a non-profit organization with the goal of promoting Tourism in Malaysia. Over the years, TravelBunch has earned a strong reputation for assisting new tourists exploring Malaysia, discovering the true beauty of Malaysia.</p>
+            </div>
+
+            <div class="box">
+                <h3>home links</h3>
+                <a href="index.html">Home Page</a>
+                <a href="what_to_do.html">What To Do</a>
+                <a href="about_contact.html">About Us</a> 
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a> 
+            </div>
+
+            <h1 class="credit">
+                created by <span> TravelBunch </span> | All Rights Reserved 
+            </h1>
+
+        </div>
+
+
+    </section>
+
+<!-- footer section ends -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {});
+        let searchBtn = document.querySelector('#search-btn')
+let searchBar = document.querySelector('.search-bar-container')
+
+let formBtn = document.querySelector('#login-btn')
+let loginForm = document.querySelector('.login-form-container')
+let formClose = document.querySelector('#form-close')
+
+let menu = document.querySelector('#menu-bar')
+let navbar = document.querySelector('.navbar')
+
+let videoBtn = document.querySelectorAll('.vid-btn')
+
+window.onscroll = () =>{
+    searchBtn.classList.remove('fa-times');
+    searchBar.classList.remove('active');
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+})
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+})
+
+formBtn.addEventListener('click', () =>{      //Add Form
+    loginForm.classList.add('active');
+})
+
+formClose.addEventListener('click', () =>{    //Remove Form
+    loginForm.classList.remove('active');
+})
+
+videoBtn.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('#video-slider').src = src
+    });
+});
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+  
+  function showMessage() {
+    alert("Thank you for Submission.");
+  }
+
+  function showWarning() {
+    var warning = document.getElementById("warning-message");
+    warning.style.display = "block";
+  }
+  
+  function hideWarning() {
+    var warning = document.getElementById("warning-message");
+    warning.style.display = "none";
+  }
+    </script>
+
+</body>
+
+</html>
